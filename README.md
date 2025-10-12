@@ -2,7 +2,7 @@
 
 **AI Software Engineer | Web Developer | Security Enthusiast | Blockchain | Software Developer**
 
----
+------------------------------------------------------------------------------------------------
 
 🌱 Currently focused on web application security, advanced data structures in C++, and designing travel/tourism platforms with robust backend and chatbot integration[web:10][web:13].
 
@@ -30,13 +30,8 @@
 
 ## 📫 Contact & Links
 
-- LinkedIn: [Parth Singh](https://in.linkedin.com/in/parthsingh71)
+- LinkedIn: [Parth Singh](https://www.linkedin.com/in/parth-singh-rajput-4476a7337/)
 - Portfolio: [Parth Singh Projects](https://nextleap.app/portfolio/parth-singh-rxz4)
-- Email: parthsingh71@example.com
+- Email: mbssparth@gmail.com
 
----
-
-> "Building secure, user-friendly platforms for global travelers and tech enthusiasts."
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=parthsingh71&show_icons=true&hide_title=true)
-
+-----------------------------------------------------------------------------------------------------------------------------------------
