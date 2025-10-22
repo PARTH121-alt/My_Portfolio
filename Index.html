@@ -1,75 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-<style>
-    img{
-    float: right;
-    margin: 20px;
-    border-radius: 10px;
-   } 
-</style>
-   
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Parth Singh — Student, B.Tech (CSE). Interests: Networking, Cloud, Databases, Web Development, Data Science." />
+  <title>Parth Singh — Portfolio</title>
+
+  <style>
+    :root{
+      --max-width: 980px;
+      --brand: #0b66c3;
+      --muted:#555;
+    }
+
+    *{box-sizing:border-box;}
+
+    body{
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      margin:0;
+      color:#222;
+      line-height:1.5;
+      background: #fff;
+    }
+
+    .container{
+      max-width:var(--max-width);
+      margin:0 auto;
+      padding:24px;
+    }
+
+    header.hero{
+      display:flex;
+      align-items:center;
+      gap:20px;
+      flex-wrap:wrap;
+      margin-bottom:12px;
+    }
+
+    .profile{
+      width:300px;
+      max-width:40%;
+      border-radius:10px;
+      object-fit:cover;
+      margin-left:auto;
+    }
+
+    h1{
+      margin:0;
+      font-size:1.8rem;
+    }
+
+    h2{
+      margin-top:1.25rem;
+      margin-bottom:.5rem;
+      font-size:1.15rem;
+    }
+
+    .meta{
+      color:var(--muted);
+      font-weight:600;
+    }
+
+    ul{
+      margin:0 0 1rem 1.25rem;
+    }
+
+    .banner{
+      margin:18px 0;
+    }
+
+    .banner img{
+      width:100%;
+      max-height:160px;
+      object-fit:cover;
+      border-radius:8px;
+      display:block;
+    }
+
+    .side-image{
+      width:300px;
+      max-width:45%;
+      border-radius:8px;
+      object-fit:cover;
+      float:right;
+      margin-left:12px;
+    }
+
+    .achievements hr{
+      margin:1.5rem 0;
+      border:none;
+      border-top:1px solid #ddd;
+    }
+
+    footer{
+      margin-top:18px;
+      text-align:center;
+      color:var(--muted);
+    }
+
+    .contact a{
+      color:var(--brand);
+      text-decoration:none;
+      font-weight:600;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width:720px){
+      .profile, .side-image{
+        width:100%;
+        max-width:100%;
+        float:none;
+        margin:0 0 12px 0;
+      }
+
+      header.hero{
+        flex-direction:column-reverse;
+        align-items:flex-start;
+      }
+    }
+  </style>
 </head>
+
 <body>
+  <div class="container">
+    <header class="hero" role="banner">
+      <div>
+        <h1>Parth Singh</h1>
+        <p class="meta">B.Tech — Computer Science &amp; Engineering (CSE)</p>
+      </div>
 
+      <!-- Check that the file name/extension below matches your repository (parth.png.jpg may be unintended). -->
+      <img class="profile" src="parth.png.jpg" alt="Portrait photograph of Parth Singh" width="300" height="400" />
+    </header>
 
-<img src="parth.png.jpg" alt="parth singh" width="300" height="400" ><h1><u><b>Name-Parth Singh</b></u></h1>
-<h2><u>Branch-CSE</u></h2>
-<h2>Areas of Tech interest</h2>
-<ul style="list-style-type: disc;"><i>
-<li>Networking and Cyber Security</li>
-<li>Cloud Computing</li>
-<li>Database Management</li>
-<li>Web Development</li>
-<li>Software Developtment</li>
-    <li>Data Science and Ai</li></i>
-</ul>
-<br>
-<h2>Hobbies</h2>
-<ul>
-    <li>Tech Anthusiast</li>
-    <li>Playing Sports</li>
-    <li>Listening Music</li>
-</ul>
-<img src="ABESEngineer.jpeg" alt="parth singh" width="600" height="160" style="float: left;" style="border:1cm;">
-<br><br><h2>Education</h2>
+    <main>
+      <section aria-labelledby="interests">
+        <h2 id="interests">Areas of technical interest</h2>
+        <ul>
+          <li>Networking &amp; Cyber Security</li>
+          <li>Cloud Computing</li>
+          <li>Database Management</li>
+          <li>Web Development</li>
+          <li>Software Development</li>
+          <li>Data Science &amp; AI</li>
+        </ul>
+      </section>
 
-<ul style="list-style-type: circle;" >
-    <li>Early education from MS.KS primary School,Mumbai</li>
-    <li>High School from Seth M.r Jaipuria School</li>
-    
-    <li>B.Tech from ABESEC</li>
+      <section aria-labelledby="hobbies">
+        <h2 id="hobbies">Hobbies</h2>
+        <ul>
+          <li>Technology enthusiast</li>
+          <li>Playing sports</li>
+          <li>Listening to music</li>
+        </ul>
+      </section>
 
-</ul><br><br><br><br>
-<h2>Birth and Present</h2>
-<ul>
-    <li>Born in Jaunpur on 11 April 2006</li>
-    <li>Pesued my school education in Barabanki </li>
-    <li>persued graduation in Ghaziabad</li>
-    <li>presently in Ghaziabad</li>
-</ul>
+      <div class="banner" role="img" aria-label="ABESEC engineering college banner">
+        <img src="ABESEngineer.jpeg" alt="ABESEC campus banner" />
+      </div>
 
-<img src="uwp4424674.webp" alt="parth singh" width="300" height="200" style="float: right;">
-<h2>Acchievements</h2>
-<ul>
-    <li>State level Taekwondo(GOLD)</li>
-    <li>District Chess Championship(SILVER)</li>
-    <li>State Football Championship(BRONZE)</li>
-    <li>National Open Taekwondo Championship(SILVER)</li>
-    <li>District Taekwondo Championship(GOLD)</li>
-</ul><br><br><br><br><br><br><hr>
-<img src="Copyright.png" alt="Copyright" width="100%" height="170">
+      <section aria-labelledby="education">
+        <h2 id="education">Education</h2>
+        <ul>
+          <li>Early education — M.S.K.S Primary School, Mumbai</li>
+          <li>High School — Seth M.R. Jaipuria School</li>
+          <li>B.Tech — ABESEC, Ghaziabad</li>
+        </ul>
+      </section>
 
-<a href="tel:8303127588">&#128222;Contact Me</a><br>
+      <section aria-labelledby="birth">
+        <h2 id="birth">Birth &amp; current location</h2>
+        <ul>
+          <li>Born in Jaunpur on 11 April 2006</li>
+          <li>Pursued school education in Barabanki</li>
+          <li>Pursued graduation in Ghaziabad</li>
+          <li>Currently based in Ghaziabad</li>
+        </ul>
+      </section>
 
+      <!-- A side image that used to float left/right in the original layout -->
+      <img class="side-image" src="uwp4424674.webp" alt="Decorative image related to interests" width="300" height="200" />
 
+      <section class="achievements" aria-labelledby="achievements">
+        <h2 id="achievements">Achievements</h2>
+        <ul>
+          <li>State level Taekwondo — Gold</li>
+          <li>District Chess Championship — Silver</li>
+          <li>State Football Championship — Bronze</li>
+          <li>National Open Taekwondo Championship — Silver</li>
+          <li>District Taekwondo Championship — Gold</li>
+        </ul>
 
+        <hr />
 
+        <!-- Full-width image (e.g., copyright/branding); keep aspect ratio -->
+        <img src="Copyright.png" alt="Copyright / footer graphic" style="width:100%;height:auto;border-radius:6px" />
+      </section>
 
+      <section class="contact" aria-labelledby="contact">
+        <h2 id="contact">Contact</h2>
+        <p>
+          <a href="tel:+918303127588" aria-label="Call Parth Singh">📞 Call: +91 83031 27588</a>
+        </p>
+      </section>
+    </main>
 
-
+    <footer>
+      <small>Last updated: 2024 — Portfolio generated from Index.html</small>
+    </footer>
+  </div>
 </body>
 </html>
