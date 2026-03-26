@@ -2,120 +2,130 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="Parth Singh — Student, B.Tech (CSE). Interests: Networking, Cloud, Databases, Web Development, Data Science." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="description" content="Portfolio of Parth Singh — B.Tech CSE Student. Interests: Networking, Cloud, Databases, Web Development, Data Science." />
   <title>Parth Singh — Portfolio</title>
 
   <style>
-    :root{
+    :root {
       --max-width: 980px;
       --brand: #0b66c3;
-      --muted:#555;
+      --muted: #555;
     }
 
-    *{box-sizing:border-box;}
+    * {
+      box-sizing: border-box;
+    }
 
-    body{
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-      margin:0;
-      color:#222;
-      line-height:1.5;
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial;
+      line-height: 1.6;
+      color: #222;
       background: #fff;
     }
 
-    .container{
-      max-width:var(--max-width);
-      margin:0 auto;
-      padding:24px;
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 24px;
     }
 
-    header.hero{
-      display:flex;
-      align-items:center;
-      gap:20px;
-      flex-wrap:wrap;
-      margin-bottom:12px;
+    /* HERO SECTION */
+    .hero {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-bottom: 12px;
     }
 
-    .profile{
-      width:300px;
-      max-width:40%;
-      border-radius:10px;
-      object-fit:cover;
-      margin-left:auto;
+    .profile {
+      width: 300px;
+      max-width: 40%;
+      border-radius: 10px;
+      object-fit: cover;
+      margin-left: auto;
     }
 
-    h1{
-      margin:0;
-      font-size:1.8rem;
+    h1 {
+      margin: 0;
+      font-size: 1.9rem;
     }
 
-    h2{
-      margin-top:1.25rem;
-      margin-bottom:.5rem;
-      font-size:1.15rem;
+    h2 {
+      margin-top: 1.3rem;
+      font-size: 1.2rem;
     }
 
-    .meta{
-      color:var(--muted);
-      font-weight:600;
+    .meta {
+      color: var(--muted);
+      font-weight: 600;
     }
 
-    ul{
-      margin:0 0 1rem 1.25rem;
+    ul {
+      margin: 0 0 1rem 1.2rem;
     }
 
-    .banner{
-      margin:18px 0;
+    /* BANNER */
+    .banner img {
+      width: 100%;
+      max-height: 170px;
+      object-fit: cover;
+      border-radius: 8px;
+      display: block;
+      margin: 18px 0;
     }
 
-    .banner img{
-      width:100%;
-      max-height:160px;
-      object-fit:cover;
-      border-radius:8px;
-      display:block;
+    /* SIDE IMAGE */
+    .side-image {
+      width: 300px;
+      max-width: 45%;
+      float: right;
+      margin-left: 12px;
+      border-radius: 8px;
+      object-fit: cover;
     }
 
-    .side-image{
-      width:300px;
-      max-width:45%;
-      border-radius:8px;
-      object-fit:cover;
-      float:right;
-      margin-left:12px;
+    /* ACHIEVEMENTS */
+    .achievements hr {
+      margin: 1.5rem 0;
+      border: none;
+      border-top: 1px solid #ddd;
     }
 
-    .achievements hr{
-      margin:1.5rem 0;
-      border:none;
-      border-top:1px solid #ddd;
+    .footer-img {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
     }
 
-    footer{
-      margin-top:18px;
-      text-align:center;
-      color:var(--muted);
+    .contact a {
+      color: var(--brand);
+      font-weight: 600;
+      text-decoration: none;
     }
 
-    .contact a{
-      color:var(--brand);
-      text-decoration:none;
-      font-weight:600;
+    footer {
+      text-align: center;
+      color: var(--muted);
+      margin-top: 22px;
     }
 
-    /* Responsive adjustments */
-    @media (max-width:720px){
-      .profile, .side-image{
-        width:100%;
-        max-width:100%;
-        float:none;
-        margin:0 0 12px 0;
+    /* RESPONSIVE */
+    @media (max-width: 720px) {
+      .profile,
+      .side-image {
+        width: 100%;
+        max-width: 100%;
+        float: none;
+        margin: 0 0 12px 0;
       }
 
-      header.hero{
-        flex-direction:column-reverse;
-        align-items:flex-start;
+      .hero {
+        flex-direction: column-reverse;
+        align-items: flex-start;
       }
     }
   </style>
@@ -123,91 +133,95 @@
 
 <body>
   <div class="container">
+
+    <!-- HERO -->
     <header class="hero" role="banner">
       <div>
         <h1>Parth Singh</h1>
-        <p class="meta">B.Tech — Computer Science &amp; Engineering (CSE)</p>
+        <p class="meta">B.Tech — Computer Science &amp; Engineering</p>
       </div>
 
-      <!-- Check that the file name/extension below matches your repository (parth.png.jpg may be unintended). -->
-      <img class="profile" src="parth.png.jpg" alt="Portrait photograph of Parth Singh" width="300" height="400" />
+      <img class="profile" src="parth.jpg" alt="Portrait of Parth Singh" />
     </header>
 
-    <main>
-      <section aria-labelledby="interests">
-        <h2 id="interests">Areas of technical interest</h2>
-        <ul>
-          <li>Networking &amp; Cyber Security</li>
-          <li>Cloud Computing</li>
-          <li>Database Management</li>
-          <li>Web Development</li>
-          <li>Software Development</li>
-          <li>Data Science &amp; AI</li>
-        </ul>
-      </section>
+    <!-- INTERESTS -->
+    <section>
+      <h2>Areas of Technical Interest</h2>
+      <ul>
+        <li>Networking &amp; Cyber Security</li>
+        <li>Cloud Computing</li>
+        <li>Database Management</li>
+        <li>Web Development</li>
+        <li>Software Development</li>
+        <li>Data Science &amp; AI</li>
+      </ul>
+    </section>
 
-      <section aria-labelledby="hobbies">
-        <h2 id="hobbies">Hobbies</h2>
-        <ul>
-          <li>Technology enthusiast</li>
-          <li>Playing sports</li>
-          <li>Listening to music</li>
-        </ul>
-      </section>
+    <!-- HOBBIES -->
+    <section>
+      <h2>Hobbies</h2>
+      <ul>
+        <li>Technology Enthusiast</li>
+        <li>Playing Sports</li>
+        <li>Listening to Music</li>
+      </ul>
+    </section>
 
-      <div class="banner" role="img" aria-label="ABESEC engineering college banner">
-        <img src="ABESEngineer.jpeg" alt="ABESEC campus banner" />
-      </div>
+    <!-- BANNER -->
+    <div class="banner">
+      <img src="ABESEngineer.jpeg" alt="ABESEC campus banner" />
+    </div>
 
-      <section aria-labelledby="education">
-        <h2 id="education">Education</h2>
-        <ul>
-          <li>Early education — M.S.K.S Primary School, Mumbai</li>
-          <li>High School — Seth M.R. Jaipuria School</li>
-          <li>B.Tech — ABESEC, Ghaziabad</li>
-        </ul>
-      </section>
+    <!-- EDUCATION -->
+    <section>
+      <h2>Education</h2>
+      <ul>
+        <li>Primary — M.S.K.S Primary School, Mumbai</li>
+        <li>High School — Seth M.R. Jaipuria School</li>
+        <li>B.Tech — ABESEC, Ghaziabad</li>
+      </ul>
+    </section>
 
-      <section aria-labelledby="birth">
-        <h2 id="birth">Birth &amp; current location</h2>
-        <ul>
-          <li>Born in Jaunpur on 11 April 2006</li>
-          <li>Pursued school education in Barabanki</li>
-          <li>Pursued graduation in Ghaziabad</li>
-          <li>Currently based in Ghaziabad</li>
-        </ul>
-      </section>
+    <!-- LOCATION -->
+    <section>
+      <h2>Birth &amp; Current Location</h2>
+      <ul>
+        <li>Born in Jaunpur on 11 April 2006</li>
+        <li>Schooling — Barabanki</li>
+        <li>Graduation — Ghaziabad</li>
+        <li>Currently based in Ghaziabad</li>
+      </ul>
+    </section>
 
-      <!-- A side image that used to float left/right in the original layout -->
-      <img class="side-image" src="uwp4424674.webp" alt="Decorative image related to interests" width="300" height="200" />
+    <!-- SIDE IMAGE -->
+    <img class="side-image" src="uwp4424674.webp" alt="Decorative image" />
 
-      <section class="achievements" aria-labelledby="achievements">
-        <h2 id="achievements">Achievements</h2>
-        <ul>
-          <li>State level Taekwondo — Gold</li>
-          <li>District Chess Championship — Silver</li>
-          <li>State Football Championship — Bronze</li>
-          <li>National Open Taekwondo Championship — Silver</li>
-          <li>District Taekwondo Championship — Gold</li>
-        </ul>
+    <!-- ACHIEVEMENTS -->
+    <section class="achievements">
+      <h2>Achievements</h2>
+      <ul>
+        <li>State Level Taekwondo — Gold</li>
+        <li>District Chess Championship — Silver</li>
+        <li>State Football Championship — Bronze</li>
+        <li>National Open Taekwondo Championship — Silver</li>
+        <li>District Taekwondo Championship — Gold</li>
+      </ul>
 
-        <hr />
+      <hr />
 
-        <!-- Full-width image (e.g., copyright/branding); keep aspect ratio -->
-        <img src="Copyright.png" alt="Copyright / footer graphic" style="width:100%;height:auto;border-radius:6px" />
-      </section>
+      <img src="Copyright.png" alt="Footer Graphic" class="footer-img" />
+    </section>
 
-      <section class="contact" aria-labelledby="contact">
-        <h2 id="contact">Contact</h2>
-        <p>
-          <a href="tel:+918303127588" aria-label="Call Parth Singh">📞 Call: +91 83031 27588</a>
-        </p>
-      </section>
-    </main>
+    <!-- CONTACT -->
+    <section class="contact">
+      <h2>Contact</h2>
+      <p><a href="tel:+918303127588">📞 Call: +91 83031 27588</a></p>
+    </section>
 
     <footer>
-      <small>Last updated: 2024 — Portfolio generated from Index.html</small>
+      <small>Last updated: 2024 — Portfolio Website</small>
     </footer>
+
   </div>
 </body>
 </html>
